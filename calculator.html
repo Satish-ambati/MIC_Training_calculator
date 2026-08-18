@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <span></span>
+                <p>0</p>
+            </div>
+            <div class="buttons">
+                <button class="special" onclick="update('C')">C</button>
+                <button class="special" onclick="update('del')">DEL</button>
+                <button class="operator" onclick="update('%')">%</button>
+                <button class="operator" onclick="update('/')">÷</button>
+
+                <button onclick="update('7')">7</button>
+                <button onclick="update('8')">8</button>
+                <button onclick="update('9')">9</button>
+                <button class="operator" onclick="update('*')">×</button>
+
+                <button onclick="update('4')">4</button>
+                <button onclick="update('5')">5</button>
+                <button onclick="update('6')">6</button>
+                <button class="operator" onclick="update('-')">−</button>
+
+                <button onclick="update('1')">1</button>
+                <button onclick="update('2')">2</button>
+                <button onclick="update('3')">3</button>
+                <button class="operator" onclick="update('+')">+</button>
+
+                <button onclick="update('b1')">(</button>
+                <button onclick="update('0')">0</button>
+                <button onclick="update('b2')">)</button>
+                <button class="equal" onclick="update('=')">=</button>
+
+                <button class="function-btn" onclick="root()">√</button>
+                <button class="function-btn" onclick="factorial()">x!</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
